@@ -8,20 +8,19 @@ Expected input:
 
  - An amount of US dollars.
 
- - A desired exchanged currency from a multiple-choice list.
-
+ - One of at least five alternate currencies from a multiple-choice
+   list, plus an 'other' option for the "doesn't exist" functionality
+   below.
 
 Expected output:
 
  - The quantity of the exchanged currency, based on the amount of US
    dollars.
    
+ - Report any API error directly in the Document Object Model (DOM).
 
- - The user's years remaining to live, based on that planet's
-   years. OR
-
- - The user's years lived past their life expectancy, based on that
-   planet's years.
+ - For the 'other' currency option, notify the user that the selected
+   currency does not exist.
 
 
 To achieve that, do this:
