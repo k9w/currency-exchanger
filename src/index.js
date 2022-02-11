@@ -26,7 +26,7 @@ function getElements(response) {
 }
 
 async function makeApiCall(currency) {
-  let response = await CryptoChecker.getCurrency(currency);
+  let response = await CurrencyExchange.getCurrency(currency);
   getElements(response);
 }
 
