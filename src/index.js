@@ -11,13 +11,17 @@ function clearFields() {
 }
 
 function getElements(response) {
-  console.log(response);
   if (typeof response === "string") {
     $('#show-errors').text(`error on our end: ${response}`);
   } else if (!response[0]) {
     $('#show-errors').text(`error on your end: This currency doesn't exist. Try again!`);
     return;
   } else if (response[0]) {
+
+    // This would be the currency conversion rate. Pass it to another
+    // function to multiply it with the number of US dollars the user
+    // entered.
+    
     $('#show-currency').text(`Here is the description for ${response[0].name}. ${response[0].description}`);
     if (response[0].description === "") {
       $('#show-currency').text(`There is no description for ${response[0].name}.`);
@@ -31,7 +35,7 @@ async function makeApiCall(currency) {
 }
 
 $(document).ready(function() {
-  $('#get-crypto').click(function() {
+  $('#get-currency').click(function() {
     let currency = $('#search-field').val().toUpperCase();
     clearFields();
     if (currency.length === 3) {
