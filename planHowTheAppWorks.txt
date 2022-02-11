@@ -8,12 +8,14 @@ Expected input:
 
  - An amount of US dollars.
 
- - A desired exchanged currency.
+ - A desired exchanged currency from a multiple-choice list.
 
 
 Expected output:
 
- - The user's age in that planet's years.
+ - The quantity of the exchanged currency, based on the amount of US
+   dollars.
+   
 
  - The user's years remaining to live, based on that planet's
    years. OR
