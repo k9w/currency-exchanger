@@ -48,6 +48,10 @@ You can find more of my work at:
 * _Install webpack and other packages listed above and in package.json
   and type:_
   
+* _Install the npm packages so that you can build the project. The
+  command below will automatically fetch the list of packages from
+  package.json._
+  
   ```$ npm install```
 
 * The decision to install specific, OLD, versions of these packages
