@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import CryptoChecker from './js/crypto.js';
+import CurrencyExchange from './js/business-logic.js';
 
 function clearFields() {
   $('#search-field').val("");
