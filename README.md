@@ -78,7 +78,7 @@ You can find more of my work at:
 
 The code which originated in this project is covered by the [ISC
 License](https://choosealicense.com/licenses/isc). See the file called
-[LICENSE](https://github.com/k9w/curency-exchanger/blob/main/LICENSE)
+[LICENSE](https://github.com/k9w/currency-exchanger/blob/main/LICENSE)
 in this same folder for distribution and liability terms as well as
 copyright holder info.
 
