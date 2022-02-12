@@ -38,6 +38,10 @@ $(document).ready(function() {
   $('#get-currency').click(function() {
     let currency = $('#search-field').val().toUpperCase();
     clearFields();
+
+    // This part won't be necessary because the API likely allows for
+    // currencies of other lengths, not just three characters.
+    
     if (currency.length === 3) {
       makeApiCall(currency);
     } else {
