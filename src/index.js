@@ -39,9 +39,11 @@ $(document).ready(function() {
     let currency = $('#search-field').val().toUpperCase();
     clearFields();
 
-    // This part won't be necessary because the API likely allows for
-    // currencies of other lengths, not just three characters.
-    
+    // Actually, leave this error checking in place. The API only uses
+    // three letter currency codes. This will save an API call for
+    // only a three letter code. Other error checking can address if
+    // the code entered is invalid even if it's thee letters long.
+        
     if (currency.length === 3) {
       makeApiCall(currency);
     } else {

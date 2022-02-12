@@ -25,6 +25,38 @@ Expected output:
 
 To achieve that, do this:
 
+The API documentation specifies the free plan, the one we'll use, only
+updates its currency exchange rates once per day. Therefore:
+
+Only call the API for the first request or when the page first loads;
+and store the full list of rates for all subsequent requests until the
+user reloads the page.
+
+This should give us an array of currency codes and exchange rates to
+the US dollar; because our request has the US dollar as the base
+currency.
+
+Then for each request, gather the quantity of US dollars (just whole
+dollars for now), and the desired three letter currency code from the
+user.
+
+Lookup that currency code in our array to get the conversion rate.
+
+Multiply the amount of dollars by that conversion rate.
+
+Display the result to the user.
+
+
+
+Error handling
+
+
+Check that the length of input is three characters.
+
+
+
+
+
 Define a class object constructor CurrencyExchange with the following
 properties and values as constants.
 
