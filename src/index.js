@@ -36,7 +36,7 @@ async function makeApiCall(currency) {
 
 $(document).ready(function() {
   $('#get-currency').click(function() {
-    let currency = $('#search-field').val().toUpperCase();
+    let currency = $('#search-field').val(); // .toUpperCase(); ?
     clearFields();
 
     // Actually, leave this error checking in place. The API only uses
